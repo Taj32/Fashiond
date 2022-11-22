@@ -14,6 +14,8 @@ body {
     
     height: 100vh;
     position: relative;
+
+    
     
     
 }
@@ -41,7 +43,7 @@ h3 {font-size: 3rem;
 }
 
 .main {
-    
+    background-color: blue;
     width: 100%;
     margin: 0;
     padding-top: 5%;
@@ -68,9 +70,18 @@ h3 {font-size: 3rem;
 	margin: 0 auto;
 }
 
-header {
-  
+#source {
+    opacity: 0;
+    transition: opacity 1s;
 }
+
+#source.fade{
+    opacity: 0;
+}
+#source.nofade{
+    opacity: 1;
+}
+
 
 header::after {
   content: '';
@@ -110,26 +121,6 @@ nav a {
   font-size: 20px;
 }
 
-nav a:hover {
-  color: #000;
-}
-
-nav a::before {
-  content: '';
-  display: block;
-  height: 5px;
-  background-color: #444;
-
-  position: absolute;
-  top: 0;
-  width: 0%;
-
-  transition: all ease-in-out 250ms;
-}
-
-nav a:hover::before {
-  width: 100%;
-}
 
 
 /* BUTTON */
