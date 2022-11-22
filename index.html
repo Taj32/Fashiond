@@ -7,18 +7,69 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Style sheets -->
         <link rel="stylesheet" href="css_files\landing_page_style.css">
+
+        <!-- Js files -->
+        <script src="js_files\scroll.js"></script>
+
     </head>
-    <body>
+
+    <header id="source">
+        <div class="container">
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+    <body onload="disableScroll()">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        
-        <p>:)</p>
-        <script src="js_files\example.js"></script>
+        <!-- video background reference: blog.hubspot.com/website/video-background-css -->
 
-        <input type="button" value="PLAY" onclick="play()">
-        <audio id="audio" src="media\sample.mp3"></audio>
+        <div class="gateway-container">
+
+            <video autoplay muted loop id="backgroundVideo">
+                <source src="media\temporary_video.mp4" type = "video/mp4">
+            </video>
+
+            
+                
+        
+            <h1>FASHION'D</h1>
+            <h3>elegant and organized</h3>
+
+            <!-- HTML !-->
+            <div class="vertical-center">
+                <button class="button-80" role="button" onclick="enableScroll()">Sign in</button>
+                <!-- HTML !-->
+            </div>
+            
+
+        </div>
+
+        <div class = "main">
+            <p>check check</p>
+            <p>check check</p>
+            <p>check check</p>
+            <p>check check</p>
+            <p>check check</p>
+        </div>
+
+
+
+
     </body>
 </html>
+
+
+
